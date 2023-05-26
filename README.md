@@ -32,7 +32,7 @@
 1. Create a new bash terminal
 2. Run deployment server
    ```bash
-   flask run
+   Flask run
    ```
 3. Copy/Paste URL into browser
 
