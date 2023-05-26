@@ -57,25 +57,28 @@
 
 ---
 
-## Starting a Project (VSCode)
+## Starting a Project (VSCode - Windows)
 
-1. Create a new bash terminal
-2. Create Python environment
+(If you want to practice separately)
+
+1. Create your own workspace
+2. In VSCode, create a new bash terminal
+3. Create Python environment
    ```bash
    py -3 -m venv .venv
    ```
-3. Activate virtual envrionment
+4. Activate virtual envrionment
    ```bash
    source .venv/Scripts/activate
    export FLASK_DEBUG=1
    ```
-4. Install Flask
+5. Install Flask
    ```bash
    pip install Flask
    ```
-5. Create app.py in root directory
-6. Start coding
-7. Run server using
+6. Create app.py in root directory
+7. Start coding
+8. Run server using
    ```bash
    Flask run
    ```
