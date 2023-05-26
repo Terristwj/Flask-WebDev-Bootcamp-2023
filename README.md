@@ -16,10 +16,29 @@
 2. Create/Activate Python environment
    ```bash
    py -3 -m venv .venv
-   source .venv/Scripts/activate
+   .venv/Scripts/activate  # (Optional)
+   export FLASK_DEBUG=1    # (Optional)
    ```
 
-### Starting a Project (VSCode)
+### Dependancies
+
+1. Flask
+   ```bash
+   pip install Flask
+   ```
+
+### Running the Project (Windows)
+
+1. Create a new bash terminal
+2. Run deployment server
+   ```bash
+   flask run
+   ```
+3. Copy/Paste URL into browser
+
+---
+
+## Starting a Project (VSCode)
 
 1. Create a new bash terminal
 2. Create Python environment
@@ -28,7 +47,7 @@
    ```
 3. Activate virtual envrionment
    ```bash
-   source .venv/Scripts/activate
+   .venv/Scripts/activate
    ```
 4. Install Flask
    ```bash
@@ -36,16 +55,5 @@
    ```
 5. Create app.py in root directory
 6. Start coding
-
-### Running the Project
-
-1. Set the Flask starting file
-   ```bash
-   export FLASK_DEBUG=1
-   ```
-2. Run deployment server
-   ```bash
-   flask run
-   ```
 
 ---
