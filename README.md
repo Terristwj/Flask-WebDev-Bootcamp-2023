@@ -16,8 +16,8 @@
 2. Create/Activate Python environment
    ```bash
    py -3 -m venv .venv
-   .venv/Scripts/activate  # (Optional)
-   export FLASK_DEBUG=1    # (Optional)
+   source .venv/Scripts/activate
+   export FLASK_DEBUG=1
    ```
 
 ### Dependancies
