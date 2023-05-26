@@ -7,10 +7,13 @@ app = Flask(__name__)
 
 # WebApp starting URL
 @app.route("/")
-
 def App():
     '''WebApp starts here'''
-    template = Template("Hello, {{ name }}")
-    template.render(name="John Doe")
     
-    return render_template("index.html")
+    kwargs = {
+        "name": "John Doe",
+        "intro": "Greetings!",
+        "hobbies": ["Gaming", "Programming"],
+    }
+
+    return render_template("index.html", **kwargs)

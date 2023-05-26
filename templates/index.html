@@ -7,6 +7,10 @@
     <title>Flask Project</title>
   </head>
   <body>
-    <h1>Apple Pie</h1>
+    <h1>{{ intro }} I am {{ name }}</h1>
+    <p>
+      My hobbies include:{% for hobby in hobbies[:-1] %} {{ hobby }}, {% endfor
+      %} {{hobbies[-1]}}
+    </p>
   </body>
 </html>
