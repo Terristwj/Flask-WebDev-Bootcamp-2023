@@ -14,13 +14,17 @@
 
 1. Latest Python (Currently Py3)
 2. Create/Activate Python environment
+   ```bash
+   py -3 -m venv .venv
+   source .venv/Scripts/activate
+   ```
 
 ### Starting a Project (VSCode)
 
 1. Create a new bash terminal
 2. Create Python environment
    ```bash
-    py -3 -m venv .venv
+   py -3 -m venv .venv
    ```
 3. Activate virtual envrionment
    ```bash
@@ -32,5 +36,16 @@
    ```
 5. Create app.py in root directory
 6. Start coding
+
+### Running the Project
+
+1. Set the Flask starting file
+   ```bash
+   export FLASK_DEBUG=1
+   ```
+2. Run deployment server
+   ```bash
+   flask run
+   ```
 
 ---
