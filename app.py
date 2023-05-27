@@ -1,5 +1,4 @@
 from flask import Flask, render_template
-from jinja2 import Template
 
 # Creates a Flask App (Object)
 # __name__ is a unique name for this file
@@ -13,7 +12,7 @@ def App():
     kwargs = {
         "name": "John Doe",
         "intro": "Greetings!",
-        "hobbies": ["Gaming", "Programming"],
+        "hobbies": ["Gaming", "Programming", "Procastinating", "Standup meeting", "Sleeping"],
     }
 
-    return render_template("index.html", **kwargs)
+    return render_template("home.html", **kwargs)

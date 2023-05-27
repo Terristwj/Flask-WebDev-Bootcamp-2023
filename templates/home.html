@@ -1,0 +1,18 @@
+{%extends "index.html" %} {%block content%}
+
+<h1>{{ intro }} I am {{ name }}</h1>
+<p>My hobbies include:</p>
+
+<h1>Welcome to Home</h1>
+
+<div class="container">
+  <div class="row">
+    {% for hobby in hobbies %}
+    <div class="col-xl-2 col-md-3 col-sm-4 g-sm-3">
+      <div class="bg-primary text-white p-3 text-center">{{ hobby }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock %}

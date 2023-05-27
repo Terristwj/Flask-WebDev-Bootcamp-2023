@@ -18,7 +18,7 @@
    ```bash
    py -3 -m venv .venv
    source .venv/Scripts/activate
-   export FLASK_DEBUG=1
+   export FLASK_DEBUG=1 # Sets run to debug
    ```
 
 ### Dependancies
@@ -47,7 +47,7 @@
 1. Always set Python env when opening VSCode
    ```bash
    source .venv/Scripts/activate
-   export FLASK_DEBUG=1
+   export FLASK_DEBUG=1 # Sets run to debug
    ```
 2. Run deployment server
    ```bash
@@ -55,6 +55,7 @@
    ```
 3. Run deployment server w/ debug mode
    ```bash
+   # w/o export FLASK_DEBUG=1
    flask --debug run # Enables data reloading
    ```
 4. Copy/Paste URL into browser
@@ -66,7 +67,9 @@
 ### Beginner's Note:
 
 1. It is best practice to download all dependancies locally onto this project
+
    - Pip debugging commands:
+
      ```bash
      # Pip
      pip -V   # Shows current working envrinoment
@@ -74,8 +77,10 @@
      pip uninstall <name> # Uninstall <name> dependancy
 
      # Flask
+     source .venv/Scripts/activate
+     export FLASK_DEBUG=1  # Sets run to debug
      flask run # Run deployment
-     flask --debug run # Developing
+     flask --debug run # Run deployment with debugger
      ```
 
 ---

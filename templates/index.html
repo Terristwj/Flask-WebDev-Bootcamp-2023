@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cygnus</title>
+    <title>Head Template</title>
 
     <!-- BootStrap CSS -->
     <link
@@ -13,28 +13,11 @@
     />
 
     <!-- Custom CSS -->
-    <link href="/static/index.css" rel="stylesheet" />
+    <link href="/static/css/index.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>{{ intro }} I am {{ name }}</h1>
-    <p>
-      My hobbies include:{% for hobby in hobbies[:-1] %} {{ hobby }}, {% endfor
-      %} {{hobbies[-1]}}
-    </p>
-
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="bg-primary text-white p-3">columns</div>
-        </div>
-        <div class="col">
-          <div class="bg-primary text-white p-3">columns</div>
-        </div>
-        <div class="col">
-          <div class="bg-primary text-white p-3">columns</div>
-        </div>
-      </div>
-    </div>
+    <!-- Inherit Here -->
+    {%block content%} {% endblock %}
 
     <!-- BootStrap popper JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
