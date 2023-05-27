@@ -73,7 +73,10 @@
      # Pip
      pip -V   # Shows current working envrinoment
      pip list # Displays every installed dependancies
+     pip install <name> # install <name> dependancy
      pip uninstall <name> # Uninstall <name> dependancy
+     pip install -r requirements.txt # install recursively
+     pip uninstall -r requirements.txt # Uninstall recursively
 
      # Flask
      source .venv/Scripts/activate
@@ -114,7 +117,7 @@
    flask run
    flask --debug run
    ```
-9. Alternatively, setup **name**
+9. Alternatively, setup **app.py**
 
    Python
 
