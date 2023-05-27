@@ -16,3 +16,6 @@ def App():
     }
 
     return render_template("home.html", **kwargs)
+
+if __name__ == '__main__':
+    app.run(debug=True)
