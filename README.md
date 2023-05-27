@@ -23,9 +23,23 @@
 
 ### Dependancies
 
-1. Flask
+1. [Flask](https://code.visualstudio.com/docs/python/tutorial-flask)
    ```bash
    pip install Flask
+   ```
+2. [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+
+   ```html
+   <!-- BootStrap CSS -->
+   <link
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+     rel="stylesheet"
+   />
+
+   <!-- BootStrap popper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+   <!-- BootStrap JS -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
    ```
 
 ### Running the Project (Windows)
@@ -37,9 +51,13 @@
    ```
 2. Run deployment server
    ```bash
-   Flask run
+   flask run
    ```
-3. Copy/Paste URL into browser
+3. Run deployment server w/ debug mode
+   ```bash
+   flask --debug run # Enables data reloading
+   ```
+4. Copy/Paste URL into browser
 
 ### Running the Project (Mac)
 
@@ -47,12 +65,17 @@
 
 ### Beginner's Note:
 
-1. It is best practice to download all dependancies only into this project
+1. It is best practice to download all dependancies locally onto this project
    - Pip debugging commands:
      ```bash
+     # Pip
      pip -V   # Shows current working envrinoment
      pip list # Displays every installed dependancies
      pip uninstall <name> # Uninstall <name> dependancy
+
+     # Flask
+     flask run # Run deployment
+     flask --debug run # Developing
      ```
 
 ---
@@ -80,7 +103,8 @@
 7. Start coding
 8. Run server using
    ```bash
-   Flask run
+   flask run
+   flask --debug run
    ```
 
 ---
